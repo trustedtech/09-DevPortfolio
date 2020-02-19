@@ -1,0 +1,22 @@
+{
+  "name": "developer-profile-generator",
+  "version": "1.0.0",
+  "description": "This application compiles a PDF profile of developers using information available on their GitHub accounts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustedtech/09-DevPortfolio.git"
+  },
+  "author": "trustedtech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trustedtech/09-DevPortfolio/issues"
+  },
+  "homepage": "https://github.com/trustedtech/09-DevPortfolio#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
