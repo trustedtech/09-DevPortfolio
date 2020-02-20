@@ -25,7 +25,7 @@ const colors = {
   }
 };
 
-function generateHTML(data) {
+const doit = function(data) {
   return `<!DOCTYPE html>
 <html lang="en">
    <head>
@@ -171,4 +171,8 @@ function generateHTML(data) {
           } 
          }
       </style>`
-        }
+}
+
+module.exports = {
+  doit: doit
+};

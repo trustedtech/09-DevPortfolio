@@ -1,0 +1,11 @@
+01-BasicPortfolio
+02-ResponsivePortfolio
+03-PasswordGenerator
+04-CodeQuiz
+05-DayPlanner
+06-WeatherDashboard
+07-FoodRecipeExplorer
+08-UpdatedPortfolio
+09-DevPortfolio
+testProject
+trustedtech.github.io

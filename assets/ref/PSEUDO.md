@@ -20,3 +20,12 @@ npm init
 npm install axios
 
 
+>>> Ask questions at command prompt and receive user input
+
+
+>>> Place axious query to GitHub for data
+
+>>> Create a profile template that take inputs will publish to PDF
+
+
+
