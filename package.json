@@ -18,6 +18,7 @@
   "homepage": "https://github.com/trustedtech/09-DevPortfolio#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "inquirer": "^7.0.4"
+    "inquirer": "^7.0.4",
+    "jspdf": "^1.5.3"
   }
 }

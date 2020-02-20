@@ -50,6 +50,13 @@ async function getGitProf(res) {
     }
 }
 
+function makePDF() {
+    const doc = new jsPDF();
+ 
+    doc.text('Hello world!', 10, 10)
+    doc.save('devprofile.pdf')
+}
+
 getInput()
     .then(function(res){ 
         const data = getGitProf(res);
