@@ -3,6 +3,8 @@ const util = require("util");
 const axios = require("axios");
 const inquirer = require("inquirer");
 const generateHTML = require('./generateHTML');
+const pdf = require('html-pdf');
+const options = { format: 'Letter' };
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -62,11 +64,17 @@ getInput()
         const data = getGitProf(res);
         return data; })
     .then(function(data){ 
-        console.log("data: " + data.color); 
+        console.log("data: " + JSON.stringify(data)); 
         const html = generateHTML.doit(data);
         return html; })
-    .then(function(html){ 
-        writeFileAsync("devprofile.pdf", html,'binary'); })
+    .then(function(html){
+        // console.log(html); 
+        pdf.create(html, options).toFile('./devprofile.pdf', function(err, res) {
+            if (err) return console.log(err);
+            // console.log(res); // { filename: '/app/businesscard.pdf' }
+        }); 
+    })
     .catch(function(err) {
         console.log(err);
-});
+    }
+);
